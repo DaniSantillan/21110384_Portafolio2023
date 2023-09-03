@@ -1,0 +1,28 @@
+num1 = 10#Creamos la variable num1
+num2 = 10#Creamos la variable num2
+if num1 == num2:#Utilizamos una condicion if donde decimso que si las dos variables son iguales se ejecutara lo que este dentro de nuetra condicion
+    print ('las variables son iguales')#Si la condicion se cumple mostrara el mensaje 
+    
+num2 =11
+if num1 != num2:#Utilizamos una condicion if donde decimso que si las dos variables son diferentes se ejecutara lo que este dentro de nuetra condicion
+    print ('las variables son diferentes')#Si la condicion se cumple mostrara el mensaje
+    
+#ELSE
+
+if num1 == num2:#Utilizamos una condicion if donde decimso que si las dos variables son iguales se ejecutara lo que este dentro de nuetra condicion
+    print ('las variables son iguales')#Si la condicion se cumple mostrara el mensaje
+else:#Utilisamos "else" si la condicion del if no se cumple se ejecutra else
+    print ('las variables son diferentes')#Si la condicion se cumple mostrara el mensaje
+    
+#ELIF
+
+edad = int(input("Cual es tu edad: \n"))#Creamos la variable edad, le preguntamos un valor al usuario y la guardamos en dicha variable
+           
+if edad <= 0:#Utilizamos una condicion if, si es falsa se brinca el contenido de esta condicion 
+    print ('Edad incorrecta')#Si la condicion es verdadera mostrara el mensaje
+    
+elif edad <= 1 and edad <=17:#Utilizamos una condicion elif, si es falsa se brinca el contenido de esta condicion 
+    print('Eres menosr de edad')#Si la condicion es verdadera mostrara el mensaje
+    
+elif edad >= 18:#Utilizamos una condicion elif, si es falsa se brinca el contenido de esta condicion 
+    print('Eres mayor de edad')#Si la condicion es verdadera mostrara el mensaje
