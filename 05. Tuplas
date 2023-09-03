@@ -1,0 +1,12 @@
+tupla = (10,20,30,'El resultado es: ')#Creamos una variable tupla
+print(tupla[3], tupla[2] - tupla[0])#Mostramos el cuarto elemento y realziamos una operacion con el tercer y el primer elemento
+
+#tupla.append(50)_A diferencia de las listas a las tuplas no pueden ser modificadas (no se puede agregar ni eliminar elementos )
+
+#COMO CONVERTIR LISTAS EN TUPLAS Y VICEVERSA 
+
+lista = ['Rojo','Blanco','Verde','Amarillo'] #Creamos una lista
+tupla = tuple(lista) #Creamos una tupla a partir de una lista 
+print (tupla) # Mostramos la tupla
+lis = list(tupla) #Creamos una lista a partir de una tupla
+print (lis) # Mostramos la lista
