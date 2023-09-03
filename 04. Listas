@@ -1,0 +1,49 @@
+nombres = ['Daniel', 'Ivan', 'Edgar', 'Adrian', 'Diego'] #Creamos una variable lista y agregamos 5 elementos en ella 
+print(nombres) #Mostramos la variable lista
+print(nombres[0]) #Solo mostramos el primer valor de la lista 
+
+#POSICIONES NEGATIVAS EN LAS LSTAS
+
+print('El ultimo elemento de la lista es: '+nombres[-1])#Mostramos el elemento de la lista mencionado en los "[]"
+
+#COMO ELIMINAR ELEMENTOS DE UNA LISTA
+
+#del
+del nombres[2]#Eliminamos el tercer elemento de la lista
+print(nombres)#Mostramos la nueva lista 
+
+#remove
+nombres.remove('Adrian')#Eliminamos el elemento "Adrian"
+print(nombres)#Mostramos la nueva lista 
+
+#pop
+guardar = nombres.pop(0)#Creamos una nueva variable y eliminamos un elemento de la lista y la guardamos en la nueva variable
+print(nombres)#Mostramos la nueva variable
+print('El elemento eliminado y guardado fue: '+guardar)#Mostramos el valor eliminado y guardado
+
+#COMO AÑADIR ELEMENTOS A UNA LISTA YA CREADA
+
+#apped
+nombres.append('Carolina')#Añadimos un nuevo elemento a la lista (siempre se añaden al final de la lista)
+print(nombres)#Mostramos la nueva lista
+
+#insert
+nombres.insert(0,guardar)#Agregamos un nuevo elemento en la pocision elegida
+print(nombres)#Mostramos la nueva lista
+
+#COMO ORDENAR LOS ELEMENTOS DE UNA LISTA 
+
+#sort
+nombres.sort()#Ordenamos los elementos alfabeticamente
+print(nombres)#Mostramos la nueva lista
+
+nombres.sort(reverse=True)#Ordenamos los elementos alfabeticamente invertido
+print(nombres)#Mostramos la nueva lista
+
+#sorted
+print(sorted(nombres))#Mostramos y ordenamos la lista de forma alfabetica pero los cambios nos son permanentes/guardados
+print(nombres)#Mostramos que los cambios no fueron permanentes/guardados con el codigo de la liena anteroir 
+
+#COMO CONTAR LOS ELEMENTOS DE UNA LISTA DE MANERA AUTOMATICA
+
+print(len(nombres))
