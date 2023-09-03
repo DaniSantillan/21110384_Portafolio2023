@@ -1,0 +1,16 @@
+colores = ['Rojo','Verde','Amarillo','Negro']#Creamos una lista
+print ('Rojo' in colores)#Comprobamos si el elemento mencionado esta en la lsita, si esta nos arroja un "tru" y si no esta un "false"
+print ('Rosa' in colores)#Comprobamos si el elemento mencionado esta en la lsita, si esta nos arroja un "tru" y si no esta un "false"
+entrada = input('Elige un color:\n')#Le peimos al usuario un color y lo guardamos en la variable
+if entrada in colores:#Hacemos una condicion
+    print('El color esta en la lista :)')#Si el valor mencionado esta en la lista mostrara el mensaje 
+else:#Si la condicion no se cumple se ejecutarea el else
+    print('El color no esta en la lista :(')#Si el valor mencionado no esta en la lista mostrara el mensaje
+    
+x = 100#Variable 1
+y = 200#Variable 2
+
+print('Se ejecuta el if') if x < y else print('Se ejecuta el else')#Forma en la que se estructura un if y un else en la misma linea
+    
+if x > y:#Condicion if
+    pass#Si de momento queremos dejar un if vacio, escribimos "pass" para que no nos marque un error de compilacion
