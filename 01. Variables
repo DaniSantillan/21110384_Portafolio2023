@@ -1,0 +1,5 @@
+mens = "hola :)" #Guardamos es mensaje en la variable 
+print (mens) #Mostramos el valor de la vaiable 
+mens = 1000  #Cambaimos el valor de la variable de string a numerico
+num = 300 # Creamos otra variable numerica
+print (mens - num)#Mostramos el mensaje y hacemos una operacion en la misma liena 
