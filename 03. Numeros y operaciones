@@ -1,0 +1,14 @@
+suma  = 10 + 5 #Creamos la variable suma y hacemos dicha operacion
+resta = 10 - 5 #Creamos la variable resta y hacemos dicha operacion
+mult = 10 * 5 #Creamos la variable mult y hacemos una multiplicacion
+div = 10 / 5 #Creamos la variable div y hacemos una divicion
+elevado = 10**5 #Creamos la variable elevado y hacemos dicha operacion
+print (suma, resta, mult, div, elevado) #Mostramos los resultados de las operaciones anteriores
+
+#Flouts
+
+num1 = 10.554 #Creamos la primer variable con punto decimal
+num2 = 20.34  #Creamos la segunda variable con punto decimal
+num = num1 + num2 #Hacemos una suma y la guardamos en la variable num
+print (num) #Mostramos el resultado de la operacion 
+print (round(num,2)) #limitamos a 2 decimales nuestro resultado
