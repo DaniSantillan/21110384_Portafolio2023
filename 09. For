@@ -1,0 +1,22 @@
+colores = ['Rojo','Verde','Amarillo','Azul']#Creamos una lista 
+for x in colores:#Creamos un bucle for
+    if x == 'Amarillo':#Hacemos una condicion if
+        continue#Si se cumple la condicion se reinicia el bucle
+    print(x)#Mostramos el valor x
+    
+print('\n')    
+
+for y in range(5,20,2):#Creamos un bucle for y usamos la funcion de rango
+    print(y)#Imprimimos el rango que creamos
+
+print('\n')
+
+num1 = ['1','2','3','4','5']#Creamos una lista
+num2 = '0'#Creamos una variable
+num3 = '6'#Creamos una variable
+
+for a in num1:#Creamos un bucle for
+    for b in num2:#Creamos un segundo bucle for
+        for c in num3:#Creamos un tercer bucle for
+            print (a + b + c)#Mostamos los valores
+    
