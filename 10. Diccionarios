@@ -1,0 +1,60 @@
+teclado = {#Creamos el primer diccionario
+    'categoria': 'teclados',#Creamos el elementro 'categoria' y su valor 'teclados' y separamos los elementos por una coma
+    'modelo': 'hyperx',#Creamos otro elemento
+    'precio': '89,99'#Creamos el tercer elemento
+    }
+teclado1 = teclado.copy()#Hacemos una copia del diccionario
+
+teclado2 = {#Creamos el segundo diccionario y sus elementos con sus respectivos valores
+    'categoria': 'teclados',
+    'modelo': 'corsair',
+    'precio': '59,99'
+    }
+TECLADOS = {#Anidamos dos diccionarios dentro de otro diccionario
+    'teclado5': {
+        'categoria': 'nada',
+        'modelo': 'nada',
+        'precio': 'nada'
+        },
+    'teclado6': {
+        'categoria': 'S/N',
+        'mmodelo': 'S/N',
+        'precio': 'S/N'
+        }    
+    }
+
+MT = dict(teclado)#Creamos una variable y con la funcion "dict" mostramos la informacion del primer diccionario
+print(MT)#Mostramos la variable
+consulta = teclado2.get('modelo'), teclado2['precio']#Creamos una variable para poder mostrar los valores que nosotros elijamos del diccionario
+print(consulta)#Mostramos la informacion 
+
+print(teclado.get('precio'))#Mostramos solo el precio del primer diccionario
+teclado['precio'] = '99,99'#Cambiamos el valor del precio del primer diccionario
+print(teclado.get('precio'))#Mostramos solo el precio del primer diccionario
+    
+for x in teclado2.values():#Creamos un bucle y con la funcion values mostramos los valores de los elementos del diccionario
+    print(x)#Mostramos los valores
+    
+for x, y in teclado2.items():#Creamos un bucle y con la funcion items mostramos los elementos y los valores del diccionario
+    print(x,': ',y)#Mostramos los elementos y valores
+    
+teclado.clear()#Eliminamos el diccionario y con la funcion "clear" no marca error
+print(teclado)#Mostramos el diccionario eliminado
+teclado['color'] = 'negro'#Añadimos un elemento y su valor al diccionario
+print(teclado)#Mostramos el diccionario
+
+print(teclado1)#Mostramos la copia del diccionario
+
+teclado3 = dict(categoria = 'teclados',#Podemos usar "dict" como un contructor y hacer nuervos diccionarios
+                modelo = 'razer',
+                precio = '69.99')
+print(teclado3)#Imprimimos el nuevo diccionario
+
+teclado4 = ('categoria','modelo','precio')#Creamos un diccionario
+vacio = 'vacio'#Creamos una nueva variable
+teclado4 = dict.fromkeys(teclado4,vacio)#Agregamos la variable a todos los elementos del dicconario
+
+teclado4.update({'color': 'blanco'})
+print(teclado4)#Mostramos el diccionario
+
+print(TECLADOS)#Mostramos el diccionario
