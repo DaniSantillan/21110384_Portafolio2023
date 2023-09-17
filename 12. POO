@@ -1,0 +1,104 @@
+class Naves():#Creamos una clase y sus propiedades
+    peso = 2500
+    largo = 50
+    ancho = 20
+    color1 = 'Negro'
+    color2 = 'Plateado'
+    motores = 4
+    activada = False
+    compuerta_principal = False
+    sistema_defensa = True
+    autodestruccion = False
+    #Creamos varias funciones para controlar la nave   
+    def encender(self):
+        self.activada = True
+    
+    def apagar(self):
+        self.activada = False
+    
+    def abrir(self):
+        self.compuerta_principal = True
+    
+    def cerrar(self):
+        self.compuerta_principal = False
+    
+    def desactivar(self):
+        self.sistema_defensa = False
+    
+    def activar(self):
+        self.sistema_defensa = True
+    
+    def activar_autodestruccion(self):
+        self.sistema_defensa = True
+        print('Autodestruccion activada..')
+    
+    def estado_motores(self):
+        if(self.activada):
+             return 'Motores trabajando'
+        else:
+            return 'Motores apagados'
+    
+    def estado_compuertas(self):
+        if(self.compuerta_principal):
+            return 'Compuerta abierta'
+        else:
+            return 'Compuerta cerrada'
+    
+    def estado_defensa(self):
+        if(self.sistema_defensa):
+            return 'Defensas activadas'
+        else:
+            return 'Defensas desactivadas'
+    
+nave1 = Naves()#Creamos un objeto que pertenece a la clase  Naves
+
+#Utilizamos el objeto para "movernos" dentro de la clase  
+nave1.encender()
+print(nave1.estado_motores())
+
+nave1.apagar()
+print(nave1.estado_motores())
+
+nave1.abrir()
+print(nave1.estado_compuertas())
+
+nave1.cerrar()
+print(nave1.estado_compuertas())
+
+nave1.desactivar()
+print(nave1.estado_defensa())
+
+nave1.activar()
+print(nave1.estado_defensa())
+
+nave1.activar_autodestruccion()
+
+print('\n__INIT__\n')
+
+class Usuarios():#Creamos la clase 
+    def __init__(self,nombre,edad):#Creamos una funcion
+        #Guardamos los valores 
+        self.nombre = nombre
+        self.edad = edad
+        
+    def saludo(self):#Creamos una segunda funcion
+        print('Iniciaste seccion correctamente\nSaludos ' + self.nombre + ', su edad es: ' + self.edad)
+        
+    def despedida(self):#Creamos una tercer funcion
+        print(self.nombre + ', cerraste sesion')
+        
+usuario1 = Usuarios('Dani', '18')#Creamos un objeto de la clase usauarios
+usuario2 = Usuarios('Julia', '22')#Creamos un segundo objeto de la clase usauarios
+
+usuario1.saludo()#Llamamos a la funcion con el objeto
+usuario2.saludo()#Llamamos a la funcion con el objeto
+usuario1.despedida()#Llamamos a la funcion con el objeto
+
+usuario2.edad = '24'#Con el objeto cambiamos el valor de edad
+usuario2.saludo()#Llamamos la funcion
+
+class Usuarios_hijo(Usuarios):#Heredamos las caracteristicas de la clase "Padre"
+    pass
+
+usuario3 = Usuarios_hijo('Alex', '19')#Hacemos un objeto pertenecinte a la nueva clase 
+usuario3.saludo()#Llamamos la funcion
