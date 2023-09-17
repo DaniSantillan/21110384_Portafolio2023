@@ -1,0 +1,48 @@
+def saluda():#Creamos una funcion
+    print('Hola')#Dentro de la funcion hacemos un print
+    
+saluda()#Llamamos a la funcion
+
+print('\nFamilia Simpson\n')
+def familias(nombre,parentesco):#Creamos una funcion con argumento
+    print(nombre + ' Simpson' + parentesco)#Hacemos un print
+    
+familias('Homer','padre')#Lamamos a la funcion con el argumento
+familias('Marge','madre')#Lamamos a la funcion con el argumento
+familias('Lisa','hija 1')#Lamamos a la funcion con el argumento
+familias('Bart','hijo')#Lamamos a la funcion con el argumento
+familias('Maggie','hija 2')#Lamamos a la funcion con el argumento
+
+print('\n')
+
+def alumnos(*args):#Creamos una funcion
+    print('El ultimo alumno es ' + args[3] + ' y el primero es: ' + args[0])#Hacemos un print para mostrar lo que menciona
+    
+alumnos('Daniel', 'Ana', 'Edgar', 'Alan')#Llamamos a la funcion
+
+print('\n*ARGS\n')
+
+def alumnos_prof(prof, sust, *args):#Creamos una funcion
+    print('Profesor: ' + prof)#Hacemos un print para mostrar el profesor 
+    print('Sustituto: ' + sust)#Hacemos un print para mostrar el profesor sustituto
+    for x in args:#Hacemos un bucle
+        print('Alumno: ' + x)#Moatramos los alumnos
+        
+lista_alum = ['Andres', 'Ana', 'Alejandro', 'Andrea']#Hacemos una lista de los alumnos
+
+alumnos_prof('Antonio', 'Carlos', *lista_alum)#Llamamos a la funcion con sus argumentos
+
+print('\n**KWARGS\n')
+
+def colores (**kwargs):#Hacemos una funcion utilizando "**kwargs"
+    print('Este es el color ' + kwargs['color1'])#Mostramos el color mencionado
+
+colores(color1 = 'rojo', color2 = 'verde', color3 = 'azul', color4 = 'amarillo')#Creamos un diccionario y sus elementos
+
+print('\n')
+
+def suma (x,y):#Hacemos una funcion
+    return x + y#Realizamos una opeacion y con la palabra "return" nos devuelve el resultado de la operacion
+
+total = suma(10,10)#Guardamos el valor de la funcion en una variable
+print(total)#Mostramos el resultado
