@@ -3,3 +3,14 @@ print (mens) #Mostramos el valor de la vaiable
 mens = 1000  #Cambaimos el valor de la variable de string a numerico
 num = 300 # Creamos otra variable numerica
 print (mens - num)#Mostramos el mensaje y hacemos una operacion en la misma liena 
+
+print('\n')
+variable1 = 'Variable fuera de la funcion'#Variable glorbal
+def funcion1():#Hacemos una funcion
+    Variable1 = 'Variable dentro de la funcion' #Le damos un valor a la variable local
+    print(variable1)#Mostramos la variable
+    global num1#Variable global
+    num1 = 10#Le damos un valor a la variable
+    
+funcion1()#Llamamos a la funcion
+print(num1)#Mostramos la variable global que se encuentra declarada dentro de la funcion
