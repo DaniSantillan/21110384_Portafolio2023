@@ -1,0 +1,36 @@
+import datetime, locale#Importamos un modulo
+locale.setlocale(locale.LC_ALL, 'es-ES')
+
+
+fecha = datetime.datetime.now()#Guardamos los datos en la variable
+#Mostramos los datos
+print('Ano: ',fecha.year)
+print('Mes: ',fecha.month)
+print('Dia: ',fecha.day)
+
+print('\nFormatos de fechas\n')
+
+#"%d" Dia del mes (0 - 31)
+#"%a" Dia de la semana (mie)
+#"%A" Dia de la semana (miercoles)
+#"%w" Dia de la semana (numero)
+#"%b" Mes (Mar)
+#"%B" Mes (Marzo)
+#"%m" Numero del mes (1 - 12)
+#"%y" Año (23)
+#"%Y" Año (2023)
+#"%H" Hora (00 - 23)
+#"%I" Hora (00 - 12)
+#"%p" AM - PM
+#"%M" Minutos (00 - 59)
+#"%S" Segundos (00 - 59)
+#"%f" Microsegundos (000000 - 999999)
+#"%j" Dia del año (001 - 366)
+#"%U" Numero de la semana del año (D / 00 - 53)
+#"%W" Numero de la semana del año (L / 00 - 53)
+#"%Z" Zona horaria (UTC)
+#"%c" Fecha y hora local (entera)
+#"%x" Feacha local (17/09/2023)
+#"%X" Hora local (19:50:30)
+
+print(fecha.strftime('%c'))
