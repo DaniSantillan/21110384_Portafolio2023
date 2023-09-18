@@ -1,0 +1,5 @@
+try:#Ejecutamos lo que este dentro de try
+    print(x)#Hcaemos un error tratando de mostrar una variable que no existe 
+    
+except:#Si hay un error dentro de try se ejecuta except y corre el programa
+    print('Hay un error')#Mostramos un print
