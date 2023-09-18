@@ -1,0 +1,30 @@
+import re#Agregamos un modulo
+
+#SEARCH()
+texto = 'Daniel Alejandro Santillan Ochoa'#Hcemos una varible
+busqueda = re.search('a',texto)#Buscamos la primer letra 'a' dentro de la variable
+print(busqueda)#Mostramos los resultados
+
+print('\n')
+
+#FINDALL()
+busqueda = re.findall('a',texto)#Buscamos todas las letras 'a' dentro de la variable
+print(busqueda)#Mostramos los resultados
+
+print('\n')
+
+#SPLIT()
+resultado = re.split(' ',texto)#Excluimos los espacios
+print(resultado)#Mostramos los resultados
+
+print('\n')
+
+#MAXSPLIT
+resultado = re.split(' ',texto, 1)#Excluimos solo el primer espacio
+print(resultado)#Mostramos los resultados
+
+print('\n')
+
+#SUB()
+resultado = re.subt(' ','-',texto)#Cambiamos los espacios por giones "-"
+print(resultado)#Mostramos los resultados
